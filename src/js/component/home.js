@@ -12,10 +12,6 @@ export class Home extends React.Component {
 		this.timerID = setInterval(() => this.tick(), 100);
 	}
 
-	componentWillUnmount() {
-		clearInterval(this.timerID);
-	}
-
 	tick() {
 		this.setState({
 			counter: this.state.counter + 1
